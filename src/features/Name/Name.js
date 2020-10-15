@@ -6,7 +6,7 @@ const Name = () => {
     return(
         
       <Main pad="large" align="center">
-          <h2>Nicolas Chataigneau</h2>
+          <h1>Nicolas Chataigneau</h1>
           <Photo></Photo>
       </Main>
     )
