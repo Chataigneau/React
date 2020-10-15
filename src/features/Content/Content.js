@@ -8,7 +8,7 @@ const Content = () => {
     return(
 
     <Grid
-    rows={['medium', 'medium']}
+    rows={['medium', 'large']}
     columns={['medium', 'medium']}
     gap="medium"
     areas={[
@@ -18,22 +18,31 @@ const Content = () => {
     ]}
     >
     <Main gridArea="apropos" background="light-4">
-        <Box>
+        <Box align="center">
             <h1>A propos</h1>
+        </Box>
+
+        <Box>
             <APropos></APropos>
         </Box>
     </Main>
 
   <Main gridArea="experiences" background="dark-6">
-        <Box>
+        <Box align="center">
             <h1>Expériences</h1>
+        </Box>
+
+        <Box>
             <Experience></Experience>
         </Box>
   </Main>
 
   <Main gridArea="competences" background="dark-3">
-    <Box>
+    <Box align="center">
         <h1>Compétences</h1>
+    </Box>
+
+    <Box>
         <Competences></Competences>
     </Box>
   </Main>

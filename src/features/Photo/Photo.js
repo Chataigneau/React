@@ -1,7 +1,7 @@
 import React from "react"
 import Icons from "react"
 import {Box,Avatar} from "grommet"
-import me from './pangolin.png'
+import me from './my_face.jpg'
 
 const Photo = () => {
     return(

@@ -7,7 +7,7 @@ const Contact = () => {
             <Text>Copyright</Text>
             <Anchor label="Nicolas Chataigneau" href="https://www.linkedin.com/in/nicolas-chataigneau-838a981a6/"/>
             <Text>nicolas.chataigneau@ynov.com</Text>
-            <Text>0645612258</Text>
+            <Text>Téléphone : 0645612258</Text>
         </Footer>
     )
 }
