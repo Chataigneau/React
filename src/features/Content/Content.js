@@ -1,10 +1,13 @@
 import React from "react"
 import {Grid, Box, Main} from "grommet"
+import APropos from "./APropos/APropos"
+import Experience from "./Experiences/Experiences.js"
+import Competences from "./Competences/Competences.js"
 
 const Content = () => {
     return(
 
-    <Grid className="center"
+    <Grid
     rows={['medium', 'medium']}
     columns={['medium', 'medium']}
     gap="medium"
@@ -14,26 +17,27 @@ const Content = () => {
     { name: 'competences', start: [1, 1], end: [1, 1] },
     ]}
     >
-  <Main gridArea="apropos" background="light-4">
-    <Box className="center">
-        <h1>A propos</h1>
-        <p>23 ans</p>
-    </Box>
-  </Main>
+    <Main gridArea="apropos" background="light-4">
+        <Box>
+            <h1>A propos</h1>
+            <APropos></APropos>
+        </Box>
+    </Main>
 
   <Main gridArea="experiences" background="dark-6">
-  <Box className="center">
-        <h1>Expériences</h1>
-        <p>Developpeur mobile</p>
-    </Box>
+        <Box>
+            <h1>Expériences</h1>
+            <Experience></Experience>
+        </Box>
   </Main>
 
   <Main gridArea="competences" background="dark-3">
-  <Box className="center">
+    <Box>
         <h1>Compétences</h1>
-        <p>Android</p>
+        <Competences></Competences>
     </Box>
   </Main>
+
     </Grid>
     )
 }

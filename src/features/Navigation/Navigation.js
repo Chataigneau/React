@@ -4,7 +4,7 @@ import {Article,BarChart,Briefcase } from 'grommet-icons'
 
 const Navigation = () => {
     return(
-        <Nav align="center" flex={false} justify="center" direction="row-responsive">
+        <Nav align="center" flex={false} justify="center" direction="row-responsive" background="neutral-3">
         <Button icon ={<Menu icon={<Article/>}/>}/>
         <Button icon ={<Menu icon={<BarChart/>}/>}/>
         <Button icon ={<Menu icon={<Briefcase/>}/>}/>

@@ -1,12 +1,11 @@
 import React from "react"
-import {Box,Main} from "grommet"
-import Me from './mario.png'
+import {Text,Main} from "grommet"
 
 const APropos = () => {
     return(
 
         <Main>
-            <img src={Me}/>
+            <Text>23 ans</Text>
         </Main>
     )
 }

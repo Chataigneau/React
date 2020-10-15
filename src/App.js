@@ -16,17 +16,11 @@ function App() {
       <Navigation></Navigation>
       <Header>
         <Name></Name>
-        <Photo align="center"></Photo>
       </Header>
       <body>
           <Box fill align="center" justify="center" direction="row">
-              <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-                Learn React
-              </a>
-          </Box>
-
-          <Content align="center"></Content>
-          
+            <Content></Content>
+          </Box> 
       </body>
       <Contact></Contact>
       </Grommet>
