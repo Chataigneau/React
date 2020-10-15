@@ -5,8 +5,8 @@ import me from './my_face.jpg'
 
 const Photo = () => {
     return(
-        <Box direction="row"  gap="small" justify="center" align="center">
-            <Avatar src={me} />  
+        <Box direction="row" justify="center" align="center">
+            <Avatar src={me}/>  
         </Box>
     )
 }

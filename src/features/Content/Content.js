@@ -10,7 +10,7 @@ const Content = () => {
     <Grid
     rows={['medium', 'large']}
     columns={['medium', 'medium']}
-    gap="medium"
+    gap="large"
     areas={[
     { name: 'apropos', start: [0, 0], end: [1, 0] },
     { name: 'experiences', start: [0, 1], end: [0, 1] },
