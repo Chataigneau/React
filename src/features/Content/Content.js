@@ -18,10 +18,6 @@ const Content = () => {
     ]}
     >
     <Main gridArea="apropos" background="light-4">
-        <Box align="center">
-            <h1>A propos</h1>
-        </Box>
-
         <Box>
             <APropos></APropos>
         </Box>
