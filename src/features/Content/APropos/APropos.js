@@ -7,7 +7,6 @@ const APropos = () => {
 
         <Main>
             <img src={Me}/>
-            <p>Image</p>
         </Main>
     )
 }

@@ -5,22 +5,18 @@ import './App.css';
 import Name from './features/Name/Name.js';
 import Contact from './features/Contact/Contact.js'
 import Photo from './features/Photo/Photo.js'
-import {Article,BarChart,Briefcase } from 'grommet-icons'
-import APropos from './features/Content/APropos/APropos';
 import Content from './features/Content/Content.js'
+import Navigation from './features/Navigation/Navigation';
 
 
 function App() {
   return (
 
     <Grommet theme={dark} full>
-      <Nav align="center" flex={false} justify="center" direction="row-responsive">
-        <Button icon ={<Menu icon={<Article/>}/>}/>
-        <Button icon ={<Menu icon={<BarChart/>}/>}/>
-        <Button icon ={<Menu icon={<Briefcase/>}/>}/>
-      </Nav>
+      <Navigation></Navigation>
       <Header>
         <Name></Name>
+        <Photo align="center"></Photo>
       </Header>
       <body>
           <Box fill align="center" justify="center" direction="row">
@@ -29,7 +25,7 @@ function App() {
               </a>
           </Box>
 
-          <Content></Content>
+          <Content align="center"></Content>
           
       </body>
       <Contact></Contact>
