@@ -6,7 +6,7 @@ const Competences = () => {
     return(
         <Main gap="small">
             <Box direction="row"  gap="large" justify="center" align="center">
-                <Avatar src={android_logo} />  
+                <Avatar src={android_logo}/>  
             </Box>
             <Text>Android</Text>
             <Meter
