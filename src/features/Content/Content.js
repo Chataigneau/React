@@ -1,13 +1,14 @@
 import React from "react"
-import {Grid, Box, Main} from "grommet"
+import {Grid, Box, Main,ResponsiveContext} from "grommet"
 import APropos from "./APropos/APropos"
 import Experience from "./Experiences/Experiences.js"
 import Competences from "./Competences/Competences.js"
 
 const Content = () => {
+    const size = React.useContext(ResponsiveContext);
     return(
 
-    <Grid
+    <Grid pad={size}
     rows={['medium', 'large']}
     columns={['medium', 'medium']}
     gap="large"
@@ -17,14 +18,14 @@ const Content = () => {
     { name: 'competences', start: [1, 1], end: [1, 1] },
     ]}
     >
-    <Main gridArea="apropos" background="light-4">
+    <Main gridArea="apropos" background="light-4" gap="large">
         <Box>
             <APropos></APropos>
         </Box>
     </Main>
 
-  <Main gridArea="experiences" background="dark-6">
-        <Box align="center">
+  <Main gridArea="experiences" background="dark-6" gap="large">
+        <Box align="center" border='all'>
             <h1>Expériences</h1>
         </Box>
 
@@ -33,8 +34,8 @@ const Content = () => {
         </Box>
   </Main>
 
-  <Main gridArea="competences" background="dark-3">
-    <Box align="center">
+  <Main gridArea="competences" background="dark-3" gap="large">
+    <Box align="center" border="all">
         <h1>Compétences</h1>
     </Box>
 
