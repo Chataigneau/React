@@ -31,7 +31,7 @@ function App() {
           <Accueil/>
 
           : isSelected ==="About"?
-          <Box>
+          <Box gap="medium">
             <APropos/>
             <Loisirs/>
           </Box>

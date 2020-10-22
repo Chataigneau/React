@@ -26,23 +26,24 @@ const Content = () => {
     </Main>
 
   <Main gridArea="experiences" gap="small">
-        <Box align="center" border='all' background="dark-6">
-            <h1>Expériences</h1>
-        </Box>
+    <Box align="center" border='all' background="light-6">
+        <h1>Expériences</h1>
+    </Box>
 
-        <Box fill>
-            <Experience></Experience>
-        </Box>
+    <Box fill>
+        <Experience></Experience>
+    </Box>
   </Main>
 
   <Main gridArea="competences" gap="small">
-    <Box align="center" border="all" background="dark-3">
+    <Box align="center" border="all" background="light-6">
         <h1>Compétences</h1>
     </Box>
 
-    <Box>
+    <Box fill>
         <Competences></Competences>
     </Box>
+
   </Main>
 
     </Grid>

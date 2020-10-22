@@ -4,8 +4,9 @@ import uipath_logo from "./uipath.jpg"
 
 const Experiences = () => {
     return(
-        <Main background="dark-6" gap="small">
-            <Box direction="row" justify="center" align="center">
+        <Main background="light-6" gap="large" margin="medium">
+
+            <Box direction="row" justify="center" align="center" gap="large">
                 <Avatar src={uipath_logo} />
             </Box>
 

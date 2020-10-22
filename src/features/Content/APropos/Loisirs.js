@@ -8,8 +8,8 @@ import android from '../Competences/android.png'
 const Loisirs = () => {
     return(
 
-        <Main gap="small" align="center" justify="center">
-            <Box fill align="center" border="all" gap="small">
+        <Main gap="small" align="center" justify="center" background="light-1" margin="medium">
+            <Box fill align="center" border="all" pad="small">
 
             <h1>Loisirs et centre d'intérêts</h1>
 

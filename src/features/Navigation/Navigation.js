@@ -3,9 +3,6 @@ import {Nav,Button,Menu,Text,ResponsiveContext, Avatar,Image, Box} from "grommet
 import {Article,BarChart,Briefcase, Home , Overview } from 'grommet-icons'
 import Photo from "../Photo/Photo"
 import Ynov from './ynov.png'
-import APropos from "../Content/APropos/APropos.js";
-import Competences from '../Content/Competences/Competences.js'
-import Experiences from '../Content/Experiences/Experiences.js'
 
 const Navigation = ({setIsSelected}) => {
 
