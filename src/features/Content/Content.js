@@ -9,34 +9,32 @@ const Content = () => {
     const size = React.useContext(ResponsiveContext);
     return(
 
-    <Grid pad={size}
-    rows={['medium', 'large']}
-    columns={['medium', 'medium']}
-    gap="large"
+    <Grid
+    rows={[{size}, {size}]}
+    columns={[{size}, {size}]}
     areas={[
     { name: 'apropos', start: [0, 0], end: [1, 0] },
     { name: 'experiences', start: [0, 1], end: [0, 1] },
     { name: 'competences', start: [1, 1], end: [1, 1] },
     ]}
     >
-    <Main gridArea="apropos" gap="large">
-        <Box>
+    <Main gridArea="apropos">
         <APropos></APropos>
-        </Box>
     </Main>
 
   <Main gridArea="experiences" gap="small">
-    <Box align="center" border='all' background="light-6">
+    <Box align="center" border='all' background="light-6" margin="medium">
         <h1>Expériences</h1>
     </Box>
 
     <Box fill>
         <Experience></Experience>
     </Box>
+
   </Main>
 
   <Main gridArea="competences" gap="small">
-    <Box align="center" border="all" background="light-6">
+    <Box align="center" border="all" background="light-6" margin="medium">
         <h1>Compétences</h1>
     </Box>
 

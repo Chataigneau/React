@@ -11,9 +11,7 @@ import Experiences from './features/Content/Experiences/Experiences';
 import Competences from './features/Content/Competences/Competences';
 import Loisirs from './features/Content/APropos/Loisirs';
 
-
 function App() {
-
 
   const size = React.useContext(ResponsiveContext);
   const [isSelected, setIsSelected] = useState("Accueil")
@@ -21,6 +19,7 @@ function App() {
     <Grommet>
 
       <Navigation setIsSelected={setIsSelected}></Navigation>
+
       <Header>
         <Name></Name>
       </Header>
