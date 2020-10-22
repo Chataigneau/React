@@ -1,15 +1,19 @@
 import React from "react"
-import {Text,Main,Box,Avatar} from "grommet"
+import {Text,Main,Box, Avatar} from "grommet"
 import uipath_logo from "./uipath.jpg"
 
 const Experiences = () => {
     return(
-        <Main>
-            <Box direction="row"  gap="large" justify="center" align="center">
-                <Avatar src={uipath_logo} />  
+        <Main background="dark-6" gap="small">
+            <Box direction="row" justify="center" align="center">
+                <Avatar src={uipath_logo} />
             </Box>
-            <Text>RPA - Automatisation de processus</Text>
-            <Text>Developpement mobile</Text>
+
+            <Box direction="row" justify="center" gap="large" align="center">
+                <Text>RPA - Automatisation de processus</Text>
+                <Text>Developpement mobile</Text>
+            </Box>
+            
         </Main>
     )
 }

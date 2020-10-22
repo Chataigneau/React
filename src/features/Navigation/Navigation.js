@@ -1,6 +1,6 @@
 import React from "react"
 import {Nav,Button,Menu,Text,ResponsiveContext, Avatar,Image, Box} from "grommet"
-import {Article,BarChart,Briefcase, Home } from 'grommet-icons'
+import {Article,BarChart,Briefcase, Home , Overview } from 'grommet-icons'
 import { Link, BrowserRouter as Router, Route } from 'react-router-dom'
 import Photo from "../Photo/Photo"
 import Ynov from './ynov.png'
@@ -25,6 +25,8 @@ const Navigation = ({setIsSelected}) => {
         <Text><Button icon ={<Menu icon={<BarChart/>}/>} onClick={() => setIsSelected("Competences")}/>Mes compétences</Text>
           
         <Text><Button icon ={<Menu icon={<Briefcase/>}/>} onClick={() => setIsSelected("Experiences")}/>Mes expériences</Text>
+
+        <Text><Button icon ={<Menu icon={<Overview/>}/>} onClick={() => setIsSelected("Overview")}/>Overview</Text>
 
         <Image src={Ynov}/>
 

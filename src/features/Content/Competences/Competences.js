@@ -4,10 +4,12 @@ import android_logo from "./android.png"
 
 const Competences = () => {
     return(
-        <Main gap="small">
+        <Main gap="small" background="dark-3">
             <Box direction="row"  gap="large" justify="center" align="center">
                 <Avatar src={android_logo}/>  
             </Box>
+
+            <Box align="center">
             <Text>Android</Text>
             <Meter
                 values={[{
@@ -49,6 +51,7 @@ const Competences = () => {
                     value: 50,
                 }]}
             />
+            </Box>
 
         <Box align="center">
             <Meter

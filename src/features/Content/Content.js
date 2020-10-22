@@ -19,24 +19,24 @@ const Content = () => {
     { name: 'competences', start: [1, 1], end: [1, 1] },
     ]}
     >
-    <Main gridArea="apropos" background="light-4" gap="large">
+    <Main gridArea="apropos" gap="large">
         <Box>
-            <APropos></APropos>
+        <APropos></APropos>
         </Box>
     </Main>
 
-  <Main gridArea="experiences" background="dark-6" gap="large">
-        <Box align="center" border='all'>
+  <Main gridArea="experiences" gap="small">
+        <Box align="center" border='all' background="dark-6">
             <h1>Expériences</h1>
         </Box>
 
-        <Box>
+        <Box fill>
             <Experience></Experience>
         </Box>
   </Main>
 
-  <Main gridArea="competences" background="dark-3" gap="large">
-    <Box align="center" border="all">
+  <Main gridArea="competences" gap="small">
+    <Box align="center" border="all" background="dark-3">
         <h1>Compétences</h1>
     </Box>
 

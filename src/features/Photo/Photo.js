@@ -4,8 +4,8 @@ import photo from './photo.jpg'
 
 const Photo = () => {
     return(
-        <Box height="small" width="small">
-            <Image fit="cover" src={photo}/>
+        <Box height="medium" width="medium">
+            <Image fit="contain" src={photo}/>
         </Box>
     )
 }

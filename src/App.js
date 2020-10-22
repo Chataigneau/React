@@ -4,6 +4,7 @@ import './App.css';
 import Name from './features/Name/Name.js';
 import Contact from './features/Contact/Contact.js'
 import Content from './features/Content/Content.js'
+import Accueil from './features/Accueil/Accueil.js'
 import Navigation from './features/Navigation/Navigation';
 import APropos from './features/Content/APropos/APropos';
 import Experiences from './features/Content/Experiences/Experiences';
@@ -23,19 +24,22 @@ function App() {
         <Name></Name>
       </Header>
 
-      <Box fill align="center" justify="center" direction="row">
+      <Box align="center" justify="center" direction="row">
         {
           isSelected === "Accueil"?
-          <p>Accueil</p>
+          <Accueil/>
 
           : isSelected ==="About"?
-          <APropos></APropos>
+          <APropos/>
 
           : isSelected ==="Experiences"?
-          <Experiences></Experiences>
+          <Experiences/>
 
           : isSelected ==="Competences"?
-          <Competences></Competences>
+          <Competences/>
+
+          : isSelected ==="Overview"?
+          <Content/>
 
           : <p>Rien</p>
         } 
