@@ -5,6 +5,7 @@ import Experience from "./Experiences/Experiences.js"
 import Competences from "./Competences/Competences.js"
 
 const Content = () => {
+
     const size = React.useContext(ResponsiveContext);
     return(
 
