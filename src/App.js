@@ -9,6 +9,7 @@ import Navigation from './features/Navigation/Navigation';
 import APropos from './features/Content/APropos/APropos';
 import Experiences from './features/Content/Experiences/Experiences';
 import Competences from './features/Content/Competences/Competences';
+import Loisirs from './features/Content/APropos/Loisirs';
 
 
 function App() {
@@ -30,7 +31,10 @@ function App() {
           <Accueil/>
 
           : isSelected ==="About"?
-          <APropos/>
+          <Box>
+            <APropos/>
+            <Loisirs/>
+          </Box>
 
           : isSelected ==="Experiences"?
           <Experiences/>

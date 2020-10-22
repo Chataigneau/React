@@ -1,7 +1,6 @@
 import React from "react"
 import {Nav,Button,Menu,Text,ResponsiveContext, Avatar,Image, Box} from "grommet"
 import {Article,BarChart,Briefcase, Home , Overview } from 'grommet-icons'
-import { Link, BrowserRouter as Router, Route } from 'react-router-dom'
 import Photo from "../Photo/Photo"
 import Ynov from './ynov.png'
 import APropos from "../Content/APropos/APropos.js";
@@ -33,30 +32,5 @@ const Navigation = ({setIsSelected}) => {
       </Nav>
     )
 }
-
-
-const Accueil = () => (
-  <Box>
-    <h2>Accueil</h2>
-  </Box>
-);
-
-const About = () => (
-  <Box>
-    <APropos></APropos>
-  </Box>
-);
-
-const Comp = ({ match }) => (
-  <Box background="dark-3">
-    <Competences/>
-  </Box>
-);
-
-const Exp = ({match}) =>(
-    <Box background="dark-6">
-        <Experiences/>
-    </Box>
-)
 
 export default Navigation;
