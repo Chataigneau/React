@@ -7,7 +7,7 @@ const Name = () => {
         
       <Main pad="large" align="center">
           <h1>Nicolas Chataigneau</h1>
-          <h2>Developpement mobile et IoT</h2>
+          <h2>Développement mobile et IoT</h2>
       </Main>
     )
   }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Grommet, Box, Header, ResponsiveContext} from 'grommet'
+import { Grommet, Box, Header, ResponsiveContext, Text } from 'grommet'
 import './App.css';
 import Name from './features/Name/Name.js';
 import Contact from './features/Contact/Contact.js'
@@ -10,6 +10,8 @@ import APropos from './features/Content/APropos/APropos';
 import Experiences from './features/Content/Experiences/Experiences';
 import Competences from './features/Content/Competences/Competences';
 import Loisirs from './features/Content/APropos/Loisirs';
+import { BrowserRouter as Router, Route} from 'react-router-dom'
+import Formulaire from './features/Formulaire/Formulaire.js'
 
 function App() {
 
@@ -24,7 +26,10 @@ function App() {
         <Name></Name>
       </Header>
 
-      <Box align="center" justify="center" direction="row">
+      <Router>
+
+        <Route exact path="/" component={() => 
+        <Box align="center" justify="center" direction="row">
         {
           isSelected === "Accueil"?
           <Accueil/>
@@ -48,6 +53,10 @@ function App() {
         } 
         
       </Box>
+    }/>
+        <Route exact path='/form' component={() => <Formulaire/>}/>
+
+      </Router>
 
       <Contact></Contact>
 
