@@ -1,5 +1,5 @@
 import React from "react"
-import {Grid, Box, Main,ResponsiveContext} from "grommet"
+import { Grid, Box, Main,ResponsiveContext } from "grommet"
 import APropos from "./APropos/APropos"
 import Experience from "./Experiences/Experiences.js"
 import Competences from "./Competences/Competences.js"

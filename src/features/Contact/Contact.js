@@ -1,5 +1,5 @@
 import React from "react"
-import {Footer,Anchor, Text,Clock} from "grommet"
+import { Footer,Anchor, Text,Clock } from "grommet"
 
 const Contact = () => {
 

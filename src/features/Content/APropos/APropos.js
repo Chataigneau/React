@@ -2,7 +2,6 @@ import React from "react"
 import {Card,Main,CardBody,CardFooter,CardHeader,Button,Box} from "grommet"
 import {Facebook,Instagram,Github,Contact} from "grommet-icons"
 import Photo from "../../Photo/Photo"
-import { Link } from "react-router-dom"
 
 const APropos = () => {
 

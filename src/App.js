@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Grommet, Box, Header, ResponsiveContext, Text } from 'grommet'
+import { Grommet, Box, Header, ResponsiveContext } from 'grommet'
 import './App.css';
 import Name from './features/Name/Name.js';
 import Contact from './features/Contact/Contact.js'
 import Content from './features/Content/Content.js'
-import Accueil from './features/Accueil/Accueil.js'
 import Navigation from './features/Navigation/Navigation';
 import APropos from './features/Content/APropos/APropos';
 import Experiences from './features/Content/Experiences/Experiences';
@@ -16,7 +15,7 @@ import Formulaire from './features/Formulaire/Formulaire.js'
 function App() {
 
   const size = React.useContext(ResponsiveContext);
-  const [isSelected, setIsSelected] = useState("Accueil")
+  const [isSelected, setIsSelected] = useState("About")
   return (
     <Grommet>
 
@@ -31,10 +30,7 @@ function App() {
         <Route exact path="/" component={() => 
         <Box align="center" justify="center" direction="row-responsive">
         {
-          isSelected === "Accueil"?
-          <Accueil/>
-
-          : isSelected ==="About"?
+          isSelected ==="About"?
           <Box gap="medium">
             <APropos/>
             <Loisirs/>
