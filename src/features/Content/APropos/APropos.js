@@ -10,7 +10,7 @@ const APropos = () => {
     let github = "https://github.com/Chataigneau/React"
 
     return(
-        <Main align="center" gap="medium" margin="medium">
+        <Main align="center" gap="medium" margin="medium" direction="column">
 
             <Photo/>
 

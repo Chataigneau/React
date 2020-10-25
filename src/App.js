@@ -29,7 +29,7 @@ function App() {
       <Router>
 
         <Route exact path="/" component={() => 
-        <Box align="center" justify="center" direction="row">
+        <Box align="center" justify="center" direction="row-responsive">
         {
           isSelected === "Accueil"?
           <Accueil/>
@@ -54,7 +54,12 @@ function App() {
         
       </Box>
     }/>
-        <Route exact path='/form' component={() => <Formulaire/>}/>
+        <Route exact path='/form' component={() => 
+        <Box align="center" justify="center" direction="row-responsive">
+          <Formulaire/>
+        </Box>
+        
+        }/>
 
       </Router>
 
