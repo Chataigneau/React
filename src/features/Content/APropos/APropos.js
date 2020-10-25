@@ -2,6 +2,7 @@ import React from "react"
 import {Card,Main,CardBody,CardFooter,CardHeader,Button,Box} from "grommet"
 import {Facebook,Instagram,Github,Contact} from "grommet-icons"
 import Photo from "../../Photo/Photo"
+import { Link } from "react-router-dom"
 
 const APropos = () => {
 
@@ -32,7 +33,7 @@ const APropos = () => {
             <Button icon={<Facebook color="blue"/>} href={facebook} hoverIndicator="neutral-3"/>
             <Button icon={<Instagram color="pink"/>} href={instagram} hoverIndicator="neutral-3"/>
             <Button icon={<Github color="gray"/>} href={github} hoverIndicator="neutral-3"/>
-            <Button icon={<Contact color="yellow" />} hoverIndicator="neutral-3"/>
+            <Button icon={<Contact color="yellow" />} href="/form" hoverIndicator="neutral-3"/>
             </CardFooter>
             </Card>
 

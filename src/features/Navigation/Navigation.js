@@ -1,6 +1,6 @@
 import React from "react"
 import {Nav,Button,Menu,Text,ResponsiveContext, Avatar,Image, Box} from "grommet"
-import {Article,BarChart,Briefcase, Home , Overview } from 'grommet-icons'
+import {Article,BarChart,Briefcase, Home , Overview , Mail } from 'grommet-icons'
 import Photo from "../Photo/Photo"
 import Ynov from './ynov.png'
 
@@ -14,11 +14,12 @@ const Navigation = ({setIsSelected}) => {
           <Photo></Photo>
         </Avatar>
 
-        <Text><Button icon ={<Menu icon={<Home/>}/>} onClick={() => setIsSelected("Accueil")}/>Accueil</Text>
+        <Text><Button icon ={<Menu icon={<Home/>}/>} onClick={() => setIsSelected("Accueil")} href="/"/>Accueil</Text>
         <Text><Button icon ={<Menu icon={<Article/>}/>} onClick={() => setIsSelected("About")}/>A propos</Text>
         <Text><Button icon ={<Menu icon={<BarChart/>}/>} onClick={() => setIsSelected("Competences")}/>Compétences</Text>
         <Text><Button icon ={<Menu icon={<Briefcase/>}/>} onClick={() => setIsSelected("Experiences")}/>Expériences</Text>
         <Text><Button icon ={<Menu icon={<Overview/>}/>} onClick={() => setIsSelected("Overview")}/>Overview</Text>
+        <Text><Button icon ={<Menu icon={<Mail/>}/>} href="/form"/>Contacter</Text>
 
         <Image src={Ynov} size={size}/>
 
