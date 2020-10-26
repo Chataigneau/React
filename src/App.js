@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Grommet, Box, Header, ResponsiveContext } from 'grommet'
 import './App.css';
 import Name from './features/Name/Name.js';
@@ -15,11 +15,10 @@ import Formulaire from './features/Formulaire/Formulaire.js'
 function App() {
 
   const size = React.useContext(ResponsiveContext);
-  const [isSelected, setIsSelected] = useState("About")
   return (
     <Grommet>
 
-      <Navigation setIsSelected={setIsSelected}></Navigation>
+      <Navigation></Navigation>
 
       <Header>
         <Name></Name>
