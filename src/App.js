@@ -26,36 +26,24 @@ function App() {
       </Header>
 
       <Router>
-
-        <Route exact path="/" component={() => 
         <Box align="center" justify="center" direction="row-responsive">
-        {
-          isSelected ==="About"?
-          <Box gap="medium">
-            <APropos/>
-            <Loisirs/>
-          </Box>
 
-          : isSelected ==="Experiences"?
-          <Experiences/>
+          <Route exact path="/" component={() =>
+            <Box gap="medium">
+              <APropos/>
+              <Loisirs/>
+            </Box>
+          }/>
 
-          : isSelected ==="Competences"?
-          <Competences/>
+          <Route exact path="/comp" component={() => <Competences/>}/>
 
-          : isSelected ==="Overview"?
-          <Content/>
+          <Route exact path="/exp" component={() => <Experiences/>}/>
 
-          : <p>Rien</p>
-        } 
-        
-      </Box>
-    }/>
-        <Route exact path='/form' component={() => 
-        <Box align="center" justify="center" direction="row-responsive">
-          <Formulaire/>
+          <Route exact path="/overview" component={() => <Content/>}/>
+
+          <Route exact path='/form' component={() => <Formulaire/>}/>
+
         </Box>
-        
-        }/>
 
       </Router>
 

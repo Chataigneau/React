@@ -15,9 +15,9 @@ const Navigation = ({setIsSelected}) => {
         </Avatar>
 
         <Text><Button icon ={<Menu icon={<Article/>}/>} onClick={() => setIsSelected("About")} href="/"/>A propos</Text>
-        <Text><Button icon ={<Menu icon={<BarChart/>}/>} onClick={() => setIsSelected("Competences")}/>Compétences</Text>
-        <Text><Button icon ={<Menu icon={<Briefcase/>}/>} onClick={() => setIsSelected("Experiences")}/>Expériences</Text>
-        <Text><Button icon ={<Menu icon={<Overview/>}/>} onClick={() => setIsSelected("Overview")}/>Overview</Text>
+        <Text><Button icon ={<Menu icon={<BarChart/>}/>} onClick={() => setIsSelected("Competences")} href="/comp"/>Compétences</Text>
+        <Text><Button icon ={<Menu icon={<Briefcase/>}/>} onClick={() => setIsSelected("Experiences")} href="exp"/>Expériences</Text>
+        <Text><Button icon ={<Menu icon={<Overview/>}/>} onClick={() => setIsSelected("Overview")}href="overview"/>Overview</Text>
         <Text><Button icon ={<Menu icon={<Mail/>}/>} href="/form"/>Contacter</Text>
 
         <Image src={Ynov} size={size}/>
