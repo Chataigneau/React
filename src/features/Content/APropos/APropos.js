@@ -16,7 +16,7 @@ const APropos = () => {
 
             <Box>
 
-            <Card fill="horizontal" fill background="light-1">
+            <Card fill="horizontal" background="light-1">
             <Box >
                 <CardHeader border="all" pad="small" justify="center">
                     <h2>A propos de moi</h2>

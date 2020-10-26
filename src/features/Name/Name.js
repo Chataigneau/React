@@ -1,6 +1,5 @@
 import React from "react"
 import {Main} from "grommet"
-import Photo from "../Photo/Photo"
 
 const Name = () => {
     return(

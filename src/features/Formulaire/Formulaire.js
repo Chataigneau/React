@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form , FormField , TextInput , Box , Button , Text } from 'grommet'
+import { Form , FormField , TextInput , Box , Button } from 'grommet'
 
 const Formulaire = () => {
 

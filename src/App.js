@@ -16,7 +16,7 @@ function App() {
 
   const size = React.useContext(ResponsiveContext);
   return (
-    <Grommet>
+    <Grommet size={size}>
 
       <Navigation></Navigation>
 
