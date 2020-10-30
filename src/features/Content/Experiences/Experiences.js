@@ -1,5 +1,5 @@
 import React from "react"
-import {Text,Main,Box, Avatar} from "grommet"
+import {Main,Box, Avatar, List} from "grommet"
 import uipath_logo from "./uipath.jpg"
 
 const Experiences = () => {
@@ -11,8 +11,18 @@ const Experiences = () => {
             </Box>
 
             <Box direction="row" justify="center" gap="large" align="center">
-                <Text>RPA - Automatisation de processus</Text>
-                <Text>Developpement mobile</Text>
+                <List
+                    primaryKey="nom_mission"
+                    secondaryKey="nom_boite"
+                    data={[
+                        {nom_mission:'Developper RPA',nom_boite:'Capgemini'},
+                        {nom_mission:'Certification développeur RPA',nom_boite:'UiPath'},
+                        {nom_mission:'Plateforme de test Gatling (Scala)',nom_boite:'Capgemini'},
+                        {nom_mission:'Script Korn Shell',nom_boite:'Capgemini'},
+                        {nom_mission:'Application météo Android natif',nom_boite:'Sterella'},
+                        {nom_mission:'Réparation équipements hardware',nom_boite:'Xizeos'},
+                    ]}
+                    />
             </Box>
             
         </Main>
